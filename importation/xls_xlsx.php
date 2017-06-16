@@ -1,4 +1,10 @@
 <?php
+/**
+* @Author: Ronyan Alves
+* @Date: 12/02/2016 08:58
+* @Projet: Scriptcase
+*
+**/
 //verifica la extension ( xls o xlsx )
 $fileExtension = explode('.',$this->importacion_ul_name);
 
