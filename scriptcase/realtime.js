@@ -5,6 +5,7 @@
 * @Projet: Scriptcase
 *
 **/
+?>
 <script language="javascript">
 function showTimer() { 
 	var time=new Date();
@@ -27,7 +28,7 @@ function initTimer() {
 	setInterval(showTimer,1000);
 }
 </script>
-
+<?php
 
 /**
 * call function:
