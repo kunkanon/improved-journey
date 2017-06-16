@@ -1,5 +1,10 @@
 <?php
-
+/**
+* @Author: Ronyan Alves
+* @Date: 03/23/2016 08:58
+* @Projet: Scriptcase
+*
+**/
 $dbname = $this->Ini->nm_banco.'.sql';
 $arquivo = fopen($dbname,"w");
 sc_lookup(quantidade, "SELECT COUNT(*) FROM information_schema.tables WHERE TABLE_TYPE NOT IN ('SYSTEM VIEW')");
