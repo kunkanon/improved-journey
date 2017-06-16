@@ -6,6 +6,6 @@
 * __PHP__
 * __JQuery__
 * __CSS__
-
+* __Shell Script__
 
 > Enjoy it.
