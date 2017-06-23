@@ -5,6 +5,8 @@
 * @Project: Scriptcase
 *
 **/
+$email = "mymail@domain.com";
+$pswd  = "mypassword";
 
 $arr_email = explode("@",$email);
 $server = end($arr_email);
