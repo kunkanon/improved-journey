@@ -1,4 +1,10 @@
 <?php
+/**
+* @Author: Ronyan Alves
+* @Date: 01/09/2017 10:25
+* @Project: Scriptcase
+*
+**/
 /** Layout > Code > Body **/
 $pdf_font = new TCPDF_FONTS();
 $fontname = $pdf_font->addTTFfont('/Applications/Scriptcase/v9/wwwroot/f2-tecnocratica-ffp.ttf', 'TrueType', '', 32);
