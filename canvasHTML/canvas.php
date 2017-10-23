@@ -9,7 +9,7 @@
 <html>
 <meta charset='utf-8' />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type='text/javascript' src='<?php echo sc_url_library("sys","lib_util","canvas2image.js"); ?>'></script>
+<script type='text/javascript' src='canvas2image.js'></script>
 <style>
     .doc {
         width: 604px;
