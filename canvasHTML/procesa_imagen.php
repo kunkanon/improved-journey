@@ -1,3 +1,11 @@
+<?php
+/**
+* @Author: Ronyan Alves
+* @Date: 2017-10-23 15:23
+* @Project: JQuery
+*
+**/
+
 if(isset($_POST['img'])){
 	if($_POST['tipo']=='base'){
 		$sql = "INSERT INTO canvasImg (img) VALUES ('".$_POST['img']."')";
