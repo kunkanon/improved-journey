@@ -100,13 +100,13 @@
 				'img': imgBase64[1]
 			}
 			$.ajax({
-				url: '../blank_30_procesa_imagen/blank_30_procesa_imagen.php',
+				url: 'imageProcess.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: dados
 			})
 			.done(function(ret){
-				window.location='../blank_30_show_imagen/blank_30_show_imagen.php?id='+ret;
+				window.location='showImage.php?id='+ret;
 			})
 			.fail(function(hxr,textStatus){
 				alert(textStatus);
