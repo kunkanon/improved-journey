@@ -4,8 +4,6 @@
 # @Project: Shell Script
 #
 ##
-
-
 #!/bin/bash
 #Oracle ScriptCase 8.1/9
 scVersion=$1
@@ -24,12 +22,10 @@ filDevel="oracle-instantclient12.1-basic_12.1.0.2.0-2_i386.deb"
 urlKsh="ftp://195.220.108.108/linux/centos/6.8/os/i386/Packages/ksh-20120801-33.el6.i686.rpm"
 urlKsh64="ftp://195.220.108.108/linux/centos/6.8/os/i386/Packages/ksh-20120801-33.el6.rpm"
 releases=("/etc/debian_version" "/etc/SuSE-release" "/etc/mandrake-release" "/etc/fedora-release" "/etc/redhat-release" "/etc/gentoo-release" "/etc/slackware-version" "/etc/arch-release")
-
 if [ -z "$1" ] ; then
   echo "Please choose an ScriptCase version [ 8.1 | 9.0 ]"
   exit 1
 fi
-
 for i in ${releases[*]}
     do if [ -f $i ] ;
      then pkg=$(echo $i | sed 's/\/etc\///1;s/_version//1;s/-release//1')
@@ -54,7 +50,6 @@ elif
 	wget $urlBasic -O $basic
 	wget $urlDevel -O $devel
 fi
-
 if [ $os = "redhat" ] ; then
    yum update -y
    if echo $arch | grep '64' ; then
