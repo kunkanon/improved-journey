@@ -1,5 +1,6 @@
 #usage
 #./fastcgiConfigure.sh /root/src/mod_fastcgi-master /opt/apache24
+#Download https://github.com/FastCGI-Archives/mod_fastcgi
 #!/bin/bash
 
 FCGIFOLDER=$1
