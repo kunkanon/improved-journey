@@ -1,5 +1,5 @@
 #usage
-#./phpConfigure.sh 72 php-7.2.1 /root/src/
+#./phpConfigure.sh 72 php-7.2.1 /root/src/php-7.2.1
 ##https://github.com/FastCGI-Archives/mod_fastcgi
 
 #!/bin/bash
