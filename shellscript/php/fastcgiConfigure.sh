@@ -9,4 +9,4 @@ APACHEDIR=$2
 cd $FCGIFOLDER
 cp Makefile.AP2 Makefile
 make top_dir=$APACHEDIR
-make install
+make install top_dir=$APACHEDIR
