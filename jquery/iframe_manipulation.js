@@ -26,9 +26,9 @@ $(document).ready(function(){
 		   }
 		});
 		if(percent<50){
-			$("#iframe_treemenu_60").contents().find("div#id-div-iframe-4").css("background-color","rgb(31, 208, 31)");
+			$("#iframe_treemenu_60").contents().find("div#id-div-iframe-4").css("background-color","@ff7575");
 		}else{
-			$("#iframe_treemenu_60").contents().find("div#id-div-iframe-4").css("background-color","green");	
+			$("#iframe_treemenu_60").contents().find("div#id-div-iframe-4").css("background-color","#77fdac");	
 		}
 	})
 });
