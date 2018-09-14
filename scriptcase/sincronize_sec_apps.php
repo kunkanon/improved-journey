@@ -23,7 +23,9 @@ if(isset($dir[0])){
 	$files = array_values(array_diff(scandir($this->Ini->path_aplicacao . "../_lib/friendly_url/"),$iniFile));
 	if(isset($files[0])){
 		foreach($files as $values){
-			unlink($this->Ini->path_aplicacao. "../_lib/friendly_url/".$values);
+			if(is_file($this->Ini->path_aplicacao. "../_lib/friendly_url/".$values)){
+				unlink($this->Ini->path_aplicacao. "../_lib/friendly_url/".$values);
+			}
 		}
 	}
 	$check_fk_0 = "SET FOREIGN_KEY_CHECKS=0";
