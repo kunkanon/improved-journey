@@ -1,5 +1,5 @@
 <?php
-/** usage: put  on top of onValidate event from  prefix_sync_apps **/
+/** usage: put  on top of onValidate event from  prefix_sync_apps application **/
 
 /** fork to remove unused applications (mysql only) **/
 
