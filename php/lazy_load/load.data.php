@@ -6,7 +6,7 @@ if($_GET['last_id'] != "undefined"){
     $sql_where = "";
   }
   $output = "";
-  $sql = "SELECT field FROM table ".$sql_where;
+  $sql = "SELECT field FROM table ".$sql_where." LIMIT ".$_GET['last_id']." ORDER BY some_id_colum DESC";
   $result = mysqli_query($conn, $query);
   if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_row($result))
