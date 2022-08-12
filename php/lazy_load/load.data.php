@@ -6,12 +6,12 @@ if($_GET['last_id'] != "undefined"){
     $sql_where = "";
   }
   $output = "";
-  $sql = "SELECT field FROM table ".$sql_where." LIMIT ".$_GET['last_id']." ORDER BY some_id_colum DESC";
-  $result = mysqli_query($conn, $query);
+  $sql = "SELECT some_id_column FROM table ".$sql_where." ORDER BY some_date_column DESC LIMIT 10";
+  $result = mysqli_query($conn, $sql);
   if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_row($result))
     {
-      $output .= "<div class='row'>$row[0]</div>";
+      $output .= "<input type="hidden" class="data-id" id="'.$row[0].'">";
     }
   }
   $loc_status = 200;
