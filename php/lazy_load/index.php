@@ -33,7 +33,7 @@
       if($(window).scrollTop() + $(window).height() > $("#pos-result").height() && action == 'inactive')
       {
        action = 'active';
-       var last_id = $(".data-rifa-id:last").attr("id");
+       var last_id = $(".data-id":last").attr("id");
        setTimeout(function(){
         loadMore(last_id);
        }, 1000);
